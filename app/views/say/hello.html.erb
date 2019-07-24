@@ -1,2 +1,19 @@
-<h1>Say#hello</h1>
-<p>Find me in app/views/say/hello.html.erb</p>
+<h1>Hello from Rails!</h1>
+<p>
+  Ir is now <%= @time %>
+</p>
+<p>
+  Say <a href="/say/goodbye">Goodbye</a>!
+</p>
+<p>
+  Time to say
+  <%= link_to "Goodbye", say_goodbye_path %>!
+</p>
+<p>
+– Addition: <%= 1+2 %><br />
+– Concatenation: <%= "cow" + "boy" %><br />
+– Time in one hour: <%= 1.hour.from_now.localtime %><br />
+</p>
+<% @files.each do |file| %>
+  file name is: <%= file %><br />
+<% end %>
