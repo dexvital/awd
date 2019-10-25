@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class ProductTest < ActiveSupport::TestCase
-  fixtures :products
+  fixtures :
+
   # test "the truth" do
   #   assert true
   # end
