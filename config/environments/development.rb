@@ -62,4 +62,6 @@ Rails.application.configure do
   # Web console configuration
   # For example, to enable the web console to be seen by all
   # config.web_console.whitelisted_ips = %w( 0.0.0.0/0 ::/0 )
+
+  config.action_cable.disable_request_forgery_protection = true
 end
